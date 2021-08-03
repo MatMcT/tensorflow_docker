@@ -5,7 +5,7 @@ services:
     dlcv:
         image : dlcv
         container_name: dlcv
-
+  
 
         runtime: nvidia
 
@@ -20,6 +20,11 @@ services:
 
         volumes:
             - /tmp/.X11-unix:/tmp/.X11-unix:rw
-            - ../:/DLCV
+            - ../:/home/deeplearn/DL4CV
 
-        
+            - unique-vol-name-here:/deeplearn/.vscode-server/extensions
+            - unique-vol-name-here-insiders:/deeplearn/.vscode-server-insiders/extensions
+
+volumes:
+    unique-vol-name-here:
+    unique-vol-name-here-insiders:
