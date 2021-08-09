@@ -20,8 +20,8 @@ services:
 
         volumes:
             - /tmp/.X11-unix:/tmp/.X11-unix:rw
-            - ../:/home/deeplearn/DL4CV
 
+            - ../:/home/deeplearn/DL4CV
             - unique-vol-name-here:/deeplearn/.vscode-server/extensions
             - unique-vol-name-here-insiders:/deeplearn/.vscode-server-insiders/extensions
 

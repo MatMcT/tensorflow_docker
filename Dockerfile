@@ -4,7 +4,12 @@ RUN apt-get update && apt-get -y install \
     cmake \
     libsm6 \
     libxext6\
-    libxrender-dev
+    libxrender-dev 
+    
+
+RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install \
+    tzdata \
+    python3-tk
 
 
 
