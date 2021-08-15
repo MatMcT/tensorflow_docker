@@ -9,7 +9,8 @@ RUN apt-get update && apt-get -y install \
 
 RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install \
     tzdata \
-    python3-tk
+    python3-tk \
+    graphviz
 
 
 
